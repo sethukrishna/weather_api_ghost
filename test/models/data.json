@@ -1,0 +1,124 @@
+{
+    "recepie_management": [
+        {
+            "Recepie": "Briyani",
+            "Cuisine": "Indian",
+            "Ingredients and Quantity": {
+                "Chicken": "2",
+                "Rice": "1",
+                "Spices": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Tandoori",
+            "Cuisine": "Indian",
+            "Ingredients and Quantity": {
+                "Chicken": "2",
+                "Rice": "1",
+                "Spices": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Kebab",
+            "Cuisine": "Indian",
+            "Ingredients and Quantity": {
+                "Chicken": "2",
+                "Rice": "1",
+                "Spices": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Noodles",
+            "Cuisine": "Chineese",
+            "Ingredients and Quantity": {
+                "Noodles": "2",
+                "Cabbage": "1",
+                "capsicum": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Pizza",
+            "Cuisine": "Italian",
+            "Ingredients and Quantity": {
+                "Pizza bun": "2",
+                "sauce": "1",
+                "Tomato": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Pasta",
+            "Cuisine": "Italian",
+            "Ingredients and Quantity": {
+                "Pasta": "2",
+                "carrot": "1",
+                "Macroni": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Sandwich",
+            "Cuisine": "American",
+            "Ingredients and Quantity": {
+                "Chicken": "2",
+                "Bread": "1",
+                "Vegetables": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Burger",
+            "Cuisine": "American",
+            "Ingredients and Quantity": {
+                "Chicken": "2",
+                "Bun": "1",
+                "Mayoneese": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Parfait",
+            "Cuisine": "French",
+            "Ingredients and Quantity": {
+                "Ice Cream": "2",
+                "Fruits": "1",
+                "Sugar": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Choclate Mousse",
+            "Cuisine": "French",
+            "Ingredients and Quantity": {
+                "Choclate": "2",
+                "Ice Cream": "1",
+                "Cherries": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Dhum Briyani",
+            "Cuisine": "Hyderbadi",
+            "Ingredients and Quantity": {
+                "Chicken": "2",
+                "Rice": "1",
+                "Spices": "3"
+            },
+            "Steps": "Cook and eat"
+        },
+        {
+            "Recepie": "Hyderbadi Briyani",
+            "Cuisine": "Hyderbadi",
+            "Ingredients and Quantity": {
+                "Chicken": "2",
+                "Rice": "1",
+                "Spices": "3"
+            },
+            "Steps": "Cook and eat"
+        }
+    ]
+}

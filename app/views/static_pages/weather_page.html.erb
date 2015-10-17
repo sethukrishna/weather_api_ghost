@@ -1,0 +1,44 @@
+<html>
+<% provide(:title, "Weather") %>
+<h1>Weather Forecast using Wonderground API</h1>
+ <!--Enter State(Eg:KY): <input type="text" name="state"><br><br>-->
+ <!--Enter Location(Eg:Murray): <input type="text" name="place"><br><br>-->
+  <!--<%=form_tag  do%>-->
+  <!--<%=label_tag 'Enter State (Eg:KY)'%>-->
+  <!--<%=text_field_tag 'state'%><br>-->
+  <!--  <%=label_tag 'Enter City (Eg:Murray)'%>-->
+  <!--<%=text_field_tag 'city'%><br>-->
+  <!--<%=submit_tag 'submit '%>-->
+  <!--<%end%>-->
+<body>
+<a href="https://rails-project-ghostrooter.c9.io/static_pages/home"> Home Page</a>
+<a href="https://rails-project-ghostrooter.c9.io/static_pages/weather_page"> WeatherAPI Page</a>
+<a href="https://rails-project-ghostrooter.c9.io/static_pages/contact_page"> Contact Page</a>
+  
+<% 
+city = yield(:city).strip
+state = yield(:state).strip
+require 'open-uri'
+require 'json'
+#open("http://api.wunderground.com/api/9bbc02780e7805e3/conditions/q/#{state}/#{city}.json") do |f|
+open('http://api.wunderground.com/api/9bbc02780e7805e3/conditions/q/KY/murray.json') do |f|
+  json_string = f.read
+  parsed_json = JSON.parse(json_string)
+  location = parsed_json['current_observation']['display_location']['city']
+  location = location.to_s
+  temp = parsed_json['current_observation']['temperature_string']
+  temp = temp.to_s
+  time = parsed_json['current_observation']['observation_time_rfc822']
+  time = time.to_s
+  provide(:location, location)
+  provide(:temp,  temp) 
+  provide(:time, time)
+end
+%>
+<p> Location: <%= yield(:location) %> </p>
+<p> Temperature: <%= yield(:temp) %> </p>
+<p> Last Updated on <%= yield(:time) %> </p>
+
+
+</body>
+</html>
